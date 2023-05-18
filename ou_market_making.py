@@ -70,7 +70,7 @@ class OrnsteinUhlenbeck(Dynamics):
         axis.plot(xs, ys*self.sigma*self.deltat**0.5 + EXt1, color='b')
         axis.plot(xs, EXt1-ys*self.sigma*self.deltat**0.5, color='b')
         axis.invert_xaxis()
-        axis.axhline(EXt1, color='b', alpha=0.3)
+        axis.axhline(EXt1, color='b', alpha=0.3, linestyle="--")
 
 
 class PriceProcess:
